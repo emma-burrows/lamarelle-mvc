@@ -196,41 +196,18 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="class.cs">
-      <DependentUpon>ContactsModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ContactsModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ContactsModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ContactsModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ContactsModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ContactsModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ContactsModel.edmx</DependentUpon>
-    </Compile>
+    <Compile Include="ContactsDBContext.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="ct_contacts.cs">
-      <DependentUpon>ContactsModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="eleve.cs">
-      <DependentUpon>ContactsModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\Contact.cs" />
+    <Compile Include="Models\MvcLamarelleContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="rentree.cs">
-      <DependentUpon>ContactsModel.tt</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\icons\apple-touch-icon.png" />
@@ -292,25 +269,11 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <EntityDeploy Include="ContactsModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>ContactsModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="ContactsModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ContactsModel.edmx</DependentUpon>
-      <LastGenOutput>ContactsModel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="ContactsModel.edmx.diagram">
-      <DependentUpon>ContactsModel.edmx</DependentUpon>
-    </Content>
-    <Content Include="ContactsModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ContactsModel.edmx</DependentUpon>
-      <LastGenOutput>ContactsModel.cs</LastGenOutput>
-    </Content>
+    <Content Include="ClassDiagram1.cd" />
+    <Content Include="ClassDiagram2.cd" />
     <None Include="Properties\PublishProfiles\EBurrows-MVC.pubxml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="Images\LaMarelle.png" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -367,6 +330,11 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Shared\_BootstrapLayout.cshtml" />
+    <Content Include="Views\Contact\Index.cshtml" />
+    <Content Include="Views\Contact\Details.cshtml" />
+    <Content Include="Views\Contact\Create.cshtml" />
+    <Content Include="Views\Contact\Edit.cshtml" />
+    <Content Include="Views\Contact\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
