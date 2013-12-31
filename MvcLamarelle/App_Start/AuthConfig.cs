@@ -26,7 +26,7 @@ namespace MvcLamarelle
       //    appId: "",
       //    appSecret: "");
 
-      //OAuthWebSecurity.RegisterGoogleClient();
+      OAuthWebSecurity.RegisterGoogleClient();
     }
   }
 }

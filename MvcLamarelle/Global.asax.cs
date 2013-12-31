@@ -17,6 +17,7 @@ namespace MvcLamarelle
     protected void Application_Start()
     {
       AreaRegistration.RegisterAllAreas();
+			(new MvcLamarelle.Filters.InitializeSimpleMembershipAttribute()).OnActionExecuting(null);
 
       WebApiConfig.Register(GlobalConfiguration.Configuration);
       FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);

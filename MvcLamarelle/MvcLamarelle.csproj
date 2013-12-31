@@ -345,6 +345,20 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\MySqlSimpleMembershipProvider\MySql.Data.Extension\MySql.Data.Extension.csproj">
+      <Project>{4e2a1497-bd2c-46e1-80b7-82e2b4eca21b}</Project>
+      <Name>MySql.Data.Extension</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\MySqlSimpleMembershipProvider\MySql.Web.Extension\MySql.Web.Extension.csproj">
+      <Project>{e3e3b30a-0dbd-462b-8ca0-9377afa84381}</Project>
+      <Name>MySql.Web.Extension</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\MySqlSimpleMembershipProvider\SimpleMembershipTest.Dac\SimpleMembershipTest.Dac.csproj">
+      <Project>{b5c5f5dc-37ec-4c34-b4eb-ed84d7edd683}</Project>
+      <Name>SimpleMembershipTest.Dac</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
