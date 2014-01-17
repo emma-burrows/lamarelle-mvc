@@ -198,15 +198,16 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="ContactsDBContext.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ContactApiController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\xxxAccountModels.cs" />
     <Compile Include="Models\Contact.cs" />
-    <Compile Include="Models\MvcLamarelleContext.cs" />
+    <Compile Include="Models\xxxMvcLamarelleContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -269,8 +270,6 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="ClassDiagram1.cd" />
-    <Content Include="ClassDiagram2.cd" />
     <None Include="Properties\PublishProfiles\EBurrows-MVC.pubxml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Images\LaMarelle.png" />
@@ -301,17 +300,17 @@
     <Content Include="Scripts\_references.js" />
     <Content Include="Images\accent.png" />
     <Content Include="Images\bullet.png" />
-    <Content Include="Images\heroAccent.png" />
-    <Content Include="Images\orderedList0.png" />
-    <Content Include="Images\orderedList1.png" />
-    <Content Include="Images\orderedList2.png" />
-    <Content Include="Images\orderedList3.png" />
-    <Content Include="Images\orderedList4.png" />
-    <Content Include="Images\orderedList5.png" />
-    <Content Include="Images\orderedList6.png" />
-    <Content Include="Images\orderedList7.png" />
-    <Content Include="Images\orderedList8.png" />
-    <Content Include="Images\orderedList9.png" />
+    <Content Include="Images\xxxheroAccent.png" />
+    <Content Include="Images\xxxorderedList0.png" />
+    <Content Include="Images\xxxorderedList1.png" />
+    <Content Include="Images\xxxorderedList2.png" />
+    <Content Include="Images\xxxorderedList3.png" />
+    <Content Include="Images\xxxorderedList4.png" />
+    <Content Include="Images\xxxorderedList5.png" />
+    <Content Include="Images\xxxorderedList6.png" />
+    <Content Include="Images\xxxorderedList7.png" />
+    <Content Include="Images\xxxorderedList8.png" />
+    <Content Include="Images\xxxorderedList9.png" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Account\_ChangePasswordPartial.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
